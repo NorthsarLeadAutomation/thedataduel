@@ -1,1 +1,1 @@
-/articles/:slug  /articles/:slug.html  200
+# Cloudflare Pages handles pretty URLs natively — no rules needed here
