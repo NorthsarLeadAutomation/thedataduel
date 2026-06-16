@@ -567,9 +567,20 @@ a.cta-btn--gold:hover { background: #ffd84d; transform: translateY(-2px); }
     padding-bottom: 80px;
   }
 
-  /* Top CTA box hidden on mobile — sticky bottom bar handles it */
+  /* Top CTA box — slim on mobile, hide header text, just show buttons */
   .cta-block--top {
+    padding: 10px 12px;
+    margin: 0 0 20px;
+    border-radius: 8px;
+  }
+  .cta-block--top p {
     display: none;
+  }
+  .cta-block--top .cta-btn {
+    padding: 8px 16px !important;
+    font-size: 0.82rem !important;
+    margin: 3px 4px !important;
+    border-radius: 6px !important;
   }
 
   /* Bottom CTA box — compact on mobile */
