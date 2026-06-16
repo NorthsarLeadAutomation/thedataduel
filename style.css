@@ -571,6 +571,23 @@ a.cta-btn--gold:hover { background: #ffd84d; transform: translateY(-2px); }
   .cta-block--top {
     display: none;
   }
+
+  /* Bottom CTA box — compact on mobile */
+  .cta-block--bottom {
+    padding: 16px 14px;
+    margin: 24px 0 16px;
+    border-radius: 8px;
+  }
+  .cta-block--bottom p {
+    font-size: 0.8rem !important;
+    margin-bottom: 10px !important;
+  }
+  .cta-block--bottom .cta-btn {
+    padding: 10px 16px !important;
+    font-size: 0.85rem !important;
+    margin: 4px 4px !important;
+    border-radius: 6px !important;
+  }
 }
 
 /* ═══ RESPONSIVE ═══ */
