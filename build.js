@@ -18,17 +18,9 @@ const ARTICLES_DIR = join(__dirname, "articles");
 
 // ── SVG fragments ─────────────────────────────────────────────────────────
 
-const LOGO_SVG = `<svg class="logo-emblem" width="38" height="38" viewBox="0 0 38 38" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
-  <circle cx="19" cy="19" r="18" fill="none" stroke="#f5c842" stroke-width="2.5"/>
-  <circle cx="19" cy="19" r="14.5" fill="#0a1628"/>
-  <text x="19" y="24" text-anchor="middle" font-size="16" font-family="system-ui,sans-serif" fill="#f5c842" font-weight="700">★</text>
-</svg>`;
+const LOGO_SVG = `<img src="/assets/northstar-logo-transparent.png" class="logo-emblem" width="38" height="38" alt="Northstar Lead Automation" style="object-fit:contain;vertical-align:middle;"/>`;
 
-const FOOTER_LOGO_SVG = `<svg width="22" height="22" viewBox="0 0 38 38" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;margin-right:6px">
-  <circle cx="19" cy="19" r="18" fill="none" stroke="#f5c842" stroke-width="2.5"/>
-  <circle cx="19" cy="19" r="14.5" fill="#0a1628"/>
-  <text x="19" y="24" text-anchor="middle" font-size="16" font-family="system-ui,sans-serif" fill="#f5c842" font-weight="700">★</text>
-</svg>`;
+const FOOTER_LOGO_SVG = `<img src="/assets/northstar-logo-transparent.png" width="22" height="22" alt="Northstar Lead Automation" style="vertical-align:middle;margin-right:6px;object-fit:contain;"/>`;
 
 // ── Helpers ───────────────────────────────────────────────────────────────
 
@@ -118,7 +110,7 @@ function siteHeader(homeHref = "/") {
     </a>
     <nav class="site-nav" aria-label="Site navigation">
       <a href="${homeHref}">Home</a>
-      <a href="https://northstarleadautomation.com" target="_blank" rel="noopener noreferrer">By Northstar</a>
+      <a href="https://northstarleadautomation.com" target="_blank" rel="noopener noreferrer">NLA</a>
     </nav>
   </div>
 </header>`;
