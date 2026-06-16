@@ -566,6 +566,11 @@ a.cta-btn--gold:hover { background: #ffd84d; transform: translateY(-2px); }
   .article-page {
     padding-bottom: 80px;
   }
+
+  /* Top CTA box hidden on mobile — sticky bottom bar handles it */
+  .cta-block--top {
+    display: none;
+  }
 }
 
 /* ═══ RESPONSIVE ═══ */

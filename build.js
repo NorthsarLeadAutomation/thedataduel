@@ -74,7 +74,7 @@ function buildFloatingPanel(slug) {
     + '</div>';
 }
 
-function buildCtaBlock(slug) {
+function buildCtaBlock(slug, position) {
   const keys = ARTICLE_CTAS[slug] ?? [];
   if (keys.length === 0) return "";
 
@@ -86,8 +86,9 @@ function buildCtaBlock(slug) {
   }).join("\n");
 
   const labels = keys.map((k) => AFFILIATE_TOOLS[k].tagline).join(" &nbsp;&middot;&nbsp; ");
+  const extraClass = position === 'top' ? ' cta-block--top' : ' cta-block--bottom';
 
-  return '<div class="cta-block" style="background:#0d1f3c;border:1.5px solid #f5c842;border-radius:12px;padding:28px 24px;margin:40px 0;text-align:center;">'
+  return '<div class="cta-block' + extraClass + '" style="background:#0d1f3c;border:1.5px solid #f5c842;border-radius:12px;padding:28px 24px;margin:40px 0;text-align:center;">'
     + '<p style="color:#f5c842;font-weight:700;font-size:1.05rem;margin:0 0 6px;">Ready to get started?</p>'
     + '<p style="color:#c8d4e8;font-size:0.9rem;margin:0 0 20px;">' + labels + '</p>'
     + buttons
@@ -355,9 +356,9 @@ ${siteHeader("/")}
   </header>
 
   <div class="article-body">
-    ${buildCtaBlock(meta.slug)}
+    ${buildCtaBlock(meta.slug, 'top')}
     ${htmlBody}
-    ${buildCtaBlock(meta.slug)}
+    ${buildCtaBlock(meta.slug, 'bottom')}
   </div>
 </main>
 
