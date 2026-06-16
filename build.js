@@ -22,6 +22,61 @@ const LOGO_SVG = `<img src="/assets/northstar-logo-transparent.png" class="logo-
 
 const FOOTER_LOGO_SVG = `<img src="/assets/northstar-logo-transparent.png" width="22" height="22" alt="Northstar Lead Automation" style="vertical-align:middle;margin-right:6px;object-fit:contain;"/>`;
 
+// ── Affiliate CTA map ─────────────────────────────────────────────────────
+// Maps article slug keywords → affiliate tools to show
+// Broker slugs: convertkit, moosend
+const AFFILIATE_TOOLS = {
+  kit: {
+    name: "Kit (ConvertKit)",
+    url: "https://broker.thedataduel.com/visit/convertkit",
+    tagline: "Best for creators & newsletters",
+    color: "#FB6970",
+  },
+  moosend: {
+    name: "Moosend",
+    url: "https://broker.thedataduel.com/visit/moosend",
+    tagline: "Best value for budget-conscious teams",
+    color: "#1a73e8",
+  },
+};
+
+// Which tools to show CTAs for, per article slug
+const ARTICLE_CTAS = {
+  "kit-review":                         ["kit"],
+  "moosend-review":                      ["moosend"],
+  "kit-vs-mailchimp":                    ["kit"],
+  "kit-vs-moosend":                      ["kit", "moosend"],
+  "moosend-vs-mailchimp":               ["moosend"],
+  "kit-vs-getresponse-2026":            ["kit"],
+  "getresponse-vs-mailchimp-2026":      ["moosend"],
+  "best-email-marketing-tools-2026":    ["kit", "moosend"],
+  "best-kit-alternatives-2026":         ["moosend"],
+  "moosend-vs-kit-budget":              ["moosend", "kit"],
+  "top-3-getresponse-alternatives-creators": ["kit", "moosend"],
+  "webflow-vs-wordpress-2026":          [],
+};
+
+function buildCtaBlock(slug) {
+  const keys = ARTICLE_CTAS[slug] ?? [];
+  if (keys.length === 0) return "";
+
+  const buttons = keys.map((key) => {
+    const tool = AFFILIATE_TOOLS[key];
+    return '<a href="' + tool.url + '" class="cta-btn" target="_blank" rel="noopener noreferrer sponsored"'
+      + ' style="background:' + tool.color + ';color:#fff;text-decoration:none;padding:14px 28px;border-radius:8px;font-size:1rem;font-weight:700;display:inline-block;margin:6px 8px;">'
+      + ' Try ' + tool.name + ' &rarr;</a>';
+  }).join("\n");
+
+  const labels = keys.map((k) => AFFILIATE_TOOLS[k].tagline).join(" &nbsp;&middot;&nbsp; ");
+
+  return '<div class="cta-block" style="background:#0d1f3c;border:1.5px solid #f5c842;border-radius:12px;padding:28px 24px;margin:40px 0;text-align:center;">'
+    + '<p style="color:#f5c842;font-weight:700;font-size:1.05rem;margin:0 0 6px;">Ready to get started?</p>'
+    + '<p style="color:#c8d4e8;font-size:0.9rem;margin:0 0 20px;">' + labels + '</p>'
+    + buttons
+    + '<p style="color:#6b7fa3;font-size:0.75rem;margin:16px 0 0;">Affiliate link &mdash; we may earn a commission at no extra cost to you.</p>'
+    + '</div>';
+}
+
 // ── Helpers ───────────────────────────────────────────────────────────────
 
 /** Infer badge type from filename stem. */
@@ -283,6 +338,7 @@ ${siteHeader("/")}
 
   <div class="article-body">
     ${htmlBody}
+    ${buildCtaBlock(meta.slug)}
   </div>
 </main>
 
