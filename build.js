@@ -56,6 +56,24 @@ const ARTICLE_CTAS = {
   "webflow-vs-wordpress-2026":          [],
 };
 
+function buildFloatingPanel(slug) {
+  const keys = ARTICLE_CTAS[slug] ?? [];
+  if (keys.length === 0) return "";
+
+  const buttons = keys.map((key) => {
+    const tool = AFFILIATE_TOOLS[key];
+    const short = key === "kit" ? "Kit" : "Moosend";
+    return '<a href="' + tool.url + '" class="floating-affiliate-btn" target="_blank" rel="noopener noreferrer sponsored" aria-label="Try ' + tool.name + '">'
+      + '<span class="floating-affiliate-label">' + short + '</span>'
+      + '<span class="floating-affiliate-arrow">&rarr;</span>'
+      + '</a>';
+  }).join("\n");
+
+  return '<div class="floating-affiliate" aria-label="Quick links">'
+    + buttons
+    + '</div>';
+}
+
 function buildCtaBlock(slug) {
   const keys = ARTICLE_CTAS[slug] ?? [];
   if (keys.length === 0) return "";
@@ -337,10 +355,13 @@ ${siteHeader("/")}
   </header>
 
   <div class="article-body">
+    ${buildCtaBlock(meta.slug)}
     ${htmlBody}
     ${buildCtaBlock(meta.slug)}
   </div>
 </main>
+
+${buildFloatingPanel(meta.slug)}
 
 ${siteFooter()}`;
 }
