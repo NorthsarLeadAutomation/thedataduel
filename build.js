@@ -132,7 +132,11 @@ function siteFooter() {
       THE DATA DUEL
     </span>
     <p>© 2026 The Data Duel. Independent reviews. Affiliate disclosure: some links may earn a commission.</p>
-    <p style="margin-top:0.5rem">A <a href="https://northstarleadautomation.com" target="_blank" rel="noopener noreferrer" style="color:#f5c842;text-decoration:none">Northstar Lead Automation</a> property.</p>
+    <p style="margin-top:1rem">
+      <a href="https://northstarleadautomation.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;opacity:0.85;transition:opacity 0.2s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">
+        <img src="/assets/northstar-logo.png" alt="Northstar Lead Automation" style="height:32px;width:auto;vertical-align:middle">
+      </a>
+    </p>
   </div>
 </footer>
 </body>
