@@ -118,6 +118,7 @@ function siteHeader(homeHref = "/") {
     </a>
     <nav class="site-nav" aria-label="Site navigation">
       <a href="${homeHref}">Home</a>
+      <a href="https://northstarleadautomation.com" target="_blank" rel="noopener noreferrer">By Northstar</a>
     </nav>
   </div>
 </header>`;
@@ -131,6 +132,7 @@ function siteFooter() {
       THE DATA DUEL
     </span>
     <p>© 2026 The Data Duel. Independent reviews. Affiliate disclosure: some links may earn a commission.</p>
+    <p style="margin-top:0.5rem">A <a href="https://northstarleadautomation.com" target="_blank" rel="noopener noreferrer" style="color:#f5c842;text-decoration:none">Northstar Lead Automation</a> property.</p>
   </div>
 </footer>
 </body>
