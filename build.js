@@ -168,6 +168,7 @@ function pageHead(title, description, cssPath = "../style.css") {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${desc}">
+  <meta name="google-site-verification" content="HIjNz2NWbekE8rQXEvGSYci2ef8CfpAmLNFURcFGbtQ" />
   <title>${esc(title)} | The Data Duel</title>
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
