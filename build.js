@@ -349,7 +349,7 @@ ${siteHeader("/")}
 
   <header class="article-header">
     <div class="card-badge ${badgeClass(meta.badge)}" style="margin-bottom:1rem">${esc(meta.badge)}</div>
-    <div class="affiliate-disclosure" role="note">Affiliate links may earn a small commission &mdash; no extra cost to you.</div>
+
   </header>
 
   <div class="article-body">
