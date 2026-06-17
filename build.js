@@ -169,6 +169,9 @@ function pageHead(title, description, cssPath = "../style.css") {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="${desc}">
   <title>${esc(title)} | The Data Duel</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">
   <link rel="stylesheet" href="${cssPath}">
 </head>
 <body>`;
