@@ -418,13 +418,12 @@ a.cta-btn--gold:hover { background: #ffd84d; transform: translateY(-2px); }
 
 /* ═══ AFFILIATE DISCLOSURE ═══ */
 .affiliate-disclosure {
-  background: var(--gold-soft);
-  border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 0.9rem 1.1rem;
-  margin: 1.5rem 0;
-  font-size: 0.82rem;
+  padding: 0.25rem 0;
+  margin: 0.5rem 0 1rem;
+  font-size: 0.72rem;
   color: var(--muted);
+  opacity: 0.7;
   font-style: italic;
 }
 

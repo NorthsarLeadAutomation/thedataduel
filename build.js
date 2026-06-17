@@ -92,7 +92,6 @@ function buildCtaBlock(slug, position) {
     + '<p style="color:#f5c842;font-weight:700;font-size:1.05rem;margin:0 0 6px;">Ready to get started?</p>'
     + '<p style="color:#c8d4e8;font-size:0.9rem;margin:0 0 20px;">' + labels + '</p>'
     + buttons
-    + '<p style="color:#6b7fa3;font-size:0.75rem;margin:16px 0 0;">Affiliate link &mdash; we may earn a commission at no extra cost to you.</p>'
     + '</div>';
 }
 
@@ -350,9 +349,7 @@ ${siteHeader("/")}
 
   <header class="article-header">
     <div class="card-badge ${badgeClass(meta.badge)}" style="margin-bottom:1rem">${esc(meta.badge)}</div>
-    <div class="affiliate-disclosure" role="note">
-      The Data Duel may earn a commission if you purchase through affiliate links in this content, at no extra cost to you.
-    </div>
+    <div class="affiliate-disclosure" role="note">Affiliate links may earn a small commission &mdash; no extra cost to you.</div>
   </header>
 
   <div class="article-body">
