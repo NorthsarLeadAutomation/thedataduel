@@ -337,6 +337,7 @@ async function generateArticlePage(meta) {
   const description = `${meta.title} — Independent reviews and comparisons for email marketing tools. The Data Duel.`;
 
   return `${pageHead(meta.title, description, "../style.css")}
+${buildJsonLd(meta)}
 
 ${siteHeader("/")}
 
@@ -362,6 +363,75 @@ ${siteHeader("/")}
 ${buildFloatingPanel(meta.slug)}
 
 ${siteFooter()}`;
+}
+
+// ── JSON-LD schema for article pages ────────────────────────────────────
+function buildJsonLd(meta) {
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": meta.badge === "Comparison" ? "Article" : "Review",
+    "headline": meta.title,
+    "description": meta.excerpt,
+    "url": "https://thedataduel.com/articles/" + meta.slug,
+    "datePublished": meta.date,
+    "dateModified": meta.date,
+    "author": { "@type": "Organization", "name": "The Data Duel", "url": "https://thedataduel.com" },
+    "publisher": { "@type": "Organization", "name": "The Data Duel", "url": "https://thedataduel.com" },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://thedataduel.com/articles/" + meta.slug }
+  };
+  return '<script type="application/ld+json">' + JSON.stringify(schema) + '<\/script>';
+}
+
+// ── Sitemap generator ─────────────────────────────────────────────────────
+function generateSitemap(articles) {
+  const today = new Date().toISOString().split("T")[0];
+  const urls = [
+    `  <url><loc>https://thedataduel.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>${today}</lastmod></url>`
+  ];
+  for (const a of articles) {
+    urls.push(`  <url><loc>https://thedataduel.com/articles/${a.slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>${today}</lastmod></url>`);
+  }
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls.join("\n")}\n</urlset>`;
+}
+
+// ── llms.txt generator (AI agent discovery) ──────────────────────────────
+function generateLlmsTxt(articles) {
+  const lines = [
+    "# The Data Duel",
+    "> Independent, data-driven reviews and comparisons of email marketing tools. No sponsorships. Affiliate links disclosed.",
+    "",
+    "## About",
+    "The Data Duel publishes honest head-to-head comparisons, in-depth reviews, and roundups of email marketing software including Kit (ConvertKit), Moosend, GetResponse, Mailchimp, and alternatives. All pricing data is independently verified.",
+    "",
+    "## Articles"
+  ];
+  for (const a of articles) {
+    lines.push(`- [${a.title}](https://thedataduel.com/articles/${a.slug}): ${a.excerpt}`);
+  }
+  lines.push("");
+  lines.push("## Data Feed");
+  lines.push("- Structured JSON: https://thedataduel.com/articles.json");
+  lines.push("- Sitemap: https://thedataduel.com/sitemap.xml");
+  return lines.join("\n");
+}
+
+// ── articles.json feed (structured data for AI agents) ───────────────────
+function generateArticlesFeed(articles) {
+  return {
+    site: "The Data Duel",
+    url: "https://thedataduel.com",
+    description: "Independent reviews and comparisons of email marketing tools.",
+    updated: new Date().toISOString(),
+    articles: articles.map((a) => ({
+      title: a.title,
+      slug: a.slug,
+      url: "https://thedataduel.com/articles/" + a.slug,
+      type: a.badge,
+      excerpt: a.excerpt,
+      date: a.date,
+      affiliates: (ARTICLE_CTAS[a.slug] ?? []).map((k) => AFFILIATE_TOOLS[k].name)
+    }))
+  };
 }
 
 // ── Main ─────────────────────────────────────────────────────────────────
@@ -400,6 +470,21 @@ async function main() {
   const indexPath = join(__dirname, "index.html");
   await writeFile(indexPath, indexHtml, "utf8");
   console.log("   ✅ index.html");
+
+  // Generate sitemap.xml
+  const sitemapXml = generateSitemap(articles);
+  await writeFile(join(__dirname, "sitemap.xml"), sitemapXml, "utf8");
+  console.log("   ✅ sitemap.xml");
+
+  // Generate llms.txt (AI agent discovery file)
+  const llmsTxt = generateLlmsTxt(articles);
+  await writeFile(join(__dirname, "llms.txt"), llmsTxt, "utf8");
+  console.log("   ✅ llms.txt");
+
+  // Generate articles.json (structured JSON feed for AI agents)
+  const articlesFeed = generateArticlesFeed(articles);
+  await writeFile(join(__dirname, "articles.json"), JSON.stringify(articlesFeed, null, 2), "utf8");
+  console.log("   ✅ articles.json");
 
   console.log("\n━".repeat(50));
   console.log(`✅ Build complete — ${generated.length + 1} files written`);

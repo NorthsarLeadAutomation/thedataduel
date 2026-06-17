@@ -1,0 +1,23 @@
+# The Data Duel
+> Independent, data-driven reviews and comparisons of email marketing tools. No sponsorships. Affiliate links disclosed.
+
+## About
+The Data Duel publishes honest head-to-head comparisons, in-depth reviews, and roundups of email marketing software including Kit (ConvertKit), Moosend, GetResponse, Mailchimp, and alternatives. All pricing data is independently verified.
+
+## Articles
+- [Best Email Marketing Tools 2026 — Honest Roundup](https://thedataduel.com/articles/best-email-marketing-tools-2026): Last updated: June 2026 | Northstar Lead Automation
+- [Kit (ConvertKit) Review 2026 — Honest Verdict for Creators](https://thedataduel.com/articles/kit-review): Last updated: June 2026 | Northstar Lead Automation
+- [Kit vs. Mailchimp 2026 — Head-to-Head Comparison](https://thedataduel.com/articles/kit-vs-mailchimp): Last updated: June 2026 | Northstar Lead Automation
+- [Kit vs. Moosend 2026 — Head-to-Head Comparison](https://thedataduel.com/articles/kit-vs-moosend): Last updated: June 2026 | Northstar Lead Automation
+- [Moosend Review 2026 — Honest Verdict for Budget-Conscious Businesses](https://thedataduel.com/articles/moosend-review): Last updated: June 2026 | Northstar Lead Automation
+- [Moosend vs. Mailchimp 2026 — Head-to-Head Comparison](https://thedataduel.com/articles/moosend-vs-mailchimp): Last updated: June 2026 | Northstar Lead Automation
+- [Best Kit (ConvertKit) Alternatives for 2026](https://thedataduel.com/articles/best-kit-alternatives-2026): Kit (formerly ConvertKit) is excellent for creators — but it's not for everyone. Maybe the pricing doesn't fit your budget. Maybe you need features Kit doesn't have. Maybe you've outgrown it.
+- [GetResponse vs Mailchimp: Which Is Better in 2026?](https://thedataduel.com/articles/getresponse-vs-mailchimp-2026): You've narrowed it down to two options: GetResponse or Mailchimp. Both are well-known, both have millions of users, and both promise results. So which one actually wins for your business in 2026?
+- [Kit vs. GetResponse: Which Is Better in 2026?](https://thedataduel.com/articles/kit-vs-getresponse-2026): Two strong platforms. One decision. Let's make it easy.
+- [Moosend vs. Kit: The Best Budget Email Tool?](https://thedataduel.com/articles/moosend-vs-kit-budget): You've got a growing list, a tight budget, and two solid options in front of you: Moosend and Kit. Both promise to help you build and monetize your audience. But which one actually delivers more value for the money?
+- [Top 3 GetResponse Alternatives for Creators](https://thedataduel.com/articles/top-3-getresponse-alternatives-creators): GetResponse is a powerful platform — but it wasn't built with creators as the primary audience. If you're a blogger, course creator, newsletter writer, or content entrepreneur, you may find that GetResponse feels a bit …
+- [Webflow vs WordPress: Which Should You Choose in 2026?](https://thedataduel.com/articles/webflow-vs-wordpress-2026): You're building a website. You've heard about both Webflow and WordPress. You've probably read enough conflicting takes to feel more confused than when you started.
+
+## Data Feed
+- Structured JSON: https://thedataduel.com/articles.json
+- Sitemap: https://thedataduel.com/sitemap.xml
