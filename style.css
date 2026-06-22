@@ -600,6 +600,30 @@ a.cta-btn--gold:hover { background: #ffd84d; transform: translateY(-2px); }
   }
 }
 
+/* ═══ NEWSLETTER SIGNUP ═══ */
+.newsletter-box {
+  background: #0a1628;
+  border: 2px solid #d4af37;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin: 2.5rem 0;
+}
+.newsletter-box h3 { color: #d4af37; font-size: 1.3rem; margin-bottom: 0.4rem; }
+.newsletter-box p { color: #ccc; font-size: 0.95rem; margin-bottom: 1.2rem; }
+.newsletter-form { display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap; }
+.newsletter-form input[type="email"] {
+  padding: 0.7rem 1rem; border-radius: 6px; border: 1px solid #d4af37;
+  background: #fff; font-size: 0.95rem; width: 260px;
+}
+.newsletter-form button {
+  padding: 0.7rem 1.4rem; background: #d4af37; color: #0a1628;
+  border: none; border-radius: 6px; font-weight: bold; cursor: pointer;
+  font-size: 0.95rem;
+}
+.newsletter-form button:hover { background: #f0c84a; }
+.newsletter-microcopy { font-size: 0.78rem; color: #888; margin-top: 0.6rem; }
+
 /* ═══ RESPONSIVE ═══ */
 @media (min-width: 600px) {
   .articles-grid {

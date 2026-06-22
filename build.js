@@ -196,6 +196,7 @@ function siteHeader(homeHref = "/") {
 function siteFooter() {
   return `<footer class="site-footer" role="contentinfo">
   <div class="site-footer-inner">
+    ${buildNewsletterBox()}
     <span class="footer-logo">
       ${FOOTER_LOGO_SVG}
       THE DATA DUEL
@@ -210,6 +211,25 @@ function siteFooter() {
 </footer>
 </body>
 </html>`;
+}
+
+// ── Newsletter signup box ───────────────────────────────────────────────────
+// KIT FORM: Replace FORM_UID_HERE with actual Kit form UID once Maccs creates Kit account
+// The placeholder UID lives in ONE place — change it here and rebuild.
+const KIT_FORM_UID = "FORM_UID_HERE";
+
+function buildNewsletterBox() {
+  return `<div class="newsletter-box">
+  <h3>📬 Get the Weekly Data Duel</h3>
+  <p>One honest comparison. Every Tuesday. No fluff.</p>
+  <!-- KIT FORM: Replace FORM_UID_HERE with actual Kit form UID once Maccs creates Kit account -->
+  <script async data-uid="${KIT_FORM_UID}" src="https://thedataduel.ck.page/${KIT_FORM_UID}/index.js"><\/script>
+  <form class="newsletter-form" action="#" onsubmit="return false;">
+    <input type="email" placeholder="Your email address" required />
+    <button type="submit">Subscribe Free</button>
+  </form>
+  <p class="newsletter-microcopy">No spam. Unsubscribe anytime. Powered by Kit.</p>
+</div>`;
 }
 
 // ── Badge class helper ────────────────────────────────────────────────────
@@ -360,6 +380,7 @@ ${siteHeader("/")}
   <div class="article-body">
     ${buildCtaBlock(meta.slug, 'top')}
     ${htmlBody}
+    ${buildNewsletterBox()}
     ${buildCtaBlock(meta.slug, 'bottom')}
   </div>
 </main>
