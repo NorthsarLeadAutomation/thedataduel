@@ -216,7 +216,7 @@ function siteFooter() {
 // ── Newsletter signup box ───────────────────────────────────────────────────
 // KIT FORM: Replace FORM_UID_HERE with actual Kit form UID once Maccs creates Kit account
 // The placeholder UID lives in ONE place — change it here and rebuild.
-const KIT_FORM_UID = "FORM_UID_HERE";
+const KIT_FORM_UID = "ee8ea56c13";
 
 function buildNewsletterBox() {
   return `<div class="newsletter-box">
