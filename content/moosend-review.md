@@ -8,7 +8,7 @@
 
 ## Quick Verdict
 
-Moosend has the best price-to-feature ratio in email marketing for businesses under 25,000 subscribers. Full automation, unlimited sends, email heatmaps, and A/B testing start at $7/month. The honest caveat: there is no free plan — the 30-day trial eventually ends, and you must pay to continue. Auto-renewing contracts have caused cancellation friction for some users. For e-commerce SMBs and digital marketers who want ActiveCampaign-level automation at a fraction of the price, Moosend is the strongest budget option in this comparison.
+Moosend has the best price-to-feature ratio in email marketing for businesses under 25,000 subscribers. Full automation, unlimited sends, email heatmaps, and A/B testing start at $9/month. The honest caveat: there is no free plan — the 30-day trial eventually ends, and you must pay to continue. Auto-renewing contracts have caused cancellation friction for some users. For e-commerce SMBs and digital marketers who want ActiveCampaign-level automation at a fraction of the price, Moosend is the strongest budget option in this comparison.
 
 **Affiliate status:** ✅ Active — Northstar earns commission on referrals.
 
@@ -21,18 +21,18 @@ Moosend has the best price-to-feature ratio in email marketing for businesses un
 | Plan | Starting Price | Contacts | Email Sends |
 |------|---------------|----------|-------------|
 | Free Trial | $0 | Up to 1,000 | Unlimited |
-| Pro | From **$7/mo** | 500+ (scales by contact count) | Unlimited |
+| Pro | From **$9/mo** | 500+ (scales by contact count) | Unlimited |
 | Moosend+ | Custom | Custom | Unlimited |
 | Enterprise | Custom | Custom | Unlimited |
 
-**Discounts available:** Annual = 20% off | Bi-annual = 15% off | Nonprofit = 25% (stackable with annual).
+**Best available deal:** Annual billing saves ~20% vs monthly. No promo codes exist for Moosend — annual billing IS the best price. 30-day free trial included, no credit card required.
 
 ### Pro Plan — List Size Scaling
 
 | Subscribers | Monthly Price | Annual Price |
 |-------------|-------------|-------------|
-| Up to 500 | $7/mo | ~$67.20/yr |
-| 501–1,000 | $7/mo | ~$67.20/yr |
+| Up to 500 | $9/mo | ~$86.40/yr |
+| 501–1,000 | $9/mo | ~$86.40/yr |
 | 1,001–2,000 | $9/mo | ~$86.40/yr |
 | 2,001–3,000 | $16/mo | ~$153.60/yr |
 | 5,001–6,000 | $32/mo | ~$307.20/yr |
@@ -57,7 +57,7 @@ Moosend has the best price-to-feature ratio in email marketing for businesses un
 
 ## What Moosend Is Genuinely Best At
 
-**Price-to-feature ratio — strongest in this comparison.** No other platform delivers full automation, A/B testing, heatmaps, and unlimited sends at $7/month. The next closest competitor (Mailchimp Essentials) starts at ~$13/mo with severely restricted automation (4 flow steps vs. Moosend's unlimited).
+**Price-to-feature ratio — strongest in this comparison.** No other platform delivers full automation, A/B testing, heatmaps, and unlimited sends at $9/month. The next closest competitor (Mailchimp Essentials) starts at ~$13/mo with severely restricted automation (4 flow steps vs. Moosend's unlimited).
 
 **Active-subscriber billing.** A structural pricing advantage: you only pay for contacts who engage with your emails. Estimated 40–60% cost savings vs. competitors at the same nominal list size.
 
@@ -154,7 +154,7 @@ The Pro plan's pricing for mid-tier contact counts isn't always immediately tran
 
 ## Verdict Score: 8.2 / 10
 
-**Justified:** Moosend earns a high score for delivering genuinely powerful automation, unlimited sends, heatmaps, and AI product recommendations at the cheapest price point in this comparison. It loses points for the absence of a free plan, auto-renewing contract friction, transactional email being an add-on, and a smaller template library. For the right use case — e-commerce SMB or digital marketing team on a budget — Moosend is the most defensible choice in the $7–100/mo bracket.
+**Justified:** Moosend earns a high score for delivering genuinely powerful automation, unlimited sends, heatmaps, and AI product recommendations at the cheapest price point in this comparison. It loses points for the absence of a free plan, auto-renewing contract friction, transactional email being an add-on, and a smaller template library. For the right use case — e-commerce SMB or digital marketing team on a budget — Moosend is the most defensible choice in the $9–100/mo bracket.
 
 ---
 

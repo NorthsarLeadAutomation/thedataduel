@@ -21,7 +21,7 @@ Kit and Moosend serve fundamentally different users. Kit is built for individual
 | Feature | Kit | Moosend |
 |---------|-----|---------|
 | Free plan | ✅ Yes (~10K subs, limited) | ❌ 30-day trial only |
-| Starting paid price | $33/mo | **$7/mo** |
+| Starting paid price | $33/mo | **$9/mo** |
 | Unlimited email sends | ✅ All plans | ✅ All plans |
 | Automation workflows | 1 free / unlimited paid | 1 trial / **unlimited paid** |
 | Billing basis | Total subscribers (incl. inactive) | **Engaged subscribers only** |
@@ -52,7 +52,7 @@ Kit and Moosend serve fundamentally different users. Kit is built for individual
 | Subscribers | Kit Creator/mo | Moosend Pro/mo | Moosend Savings |
 |-------------|---------------|----------------|-----------------|
 | Free | $0 (~10K limit, 1 automation) | $0 (30-day trial only) | Kit wins free tier |
-| 1,000 | $33 | $7 | **Moosend saves $26/mo ($312/yr)** |
+| 1,000 | $33 | $9 | **Moosend saves $24/mo ($288/yr)** |
 | 3,000 | ~$49 | $16 | **Moosend saves $33/mo ($396/yr)** |
 | 5,000 | ~$66 | $32 | **Moosend saves $34/mo ($408/yr)** |
 | 10,000 | ~$100 | $80 | **Moosend saves $20/mo ($240/yr)** |
@@ -68,7 +68,7 @@ Kit and Moosend serve fundamentally different users. Kit is built for individual
 | Automation Feature | Kit | Moosend |
 |-------------------|-----|---------|
 | Visual automation builder | ✅ | ✅ |
-| Unlimited workflows | Creator+ ($33/mo) | Pro ($7/mo) |
+| Unlimited workflows | Creator+ ($33/mo) | Pro ($9/mo) |
 | Behavior-based triggers | ✅ | ✅ |
 | E-commerce triggers (cart, purchase) | ❌ | ✅ |
 | AI product recommendation integration | ❌ | ✅ |
@@ -93,7 +93,7 @@ Kit and Moosend serve fundamentally different users. Kit is built for individual
 | Solo creator monetizing content | **Kit** | Digital products, paid newsletters, referral system |
 | Podcast / personal brand | **Kit** | Creator-first tooling, subscriber signals on Pro |
 | E-commerce store (Shopify/WooCommerce) | **Moosend** | Cart recovery, purchase tracking, AI recommendations |
-| SMB on a tight budget | **Moosend** | $7/mo vs. $33/mo — 4.7x cheaper at 1K subs |
+| SMB on a tight budget | **Moosend** | $9/mo vs. $33/mo — 3.7x cheaper at 1K subs |
 | Digital marketer wanting heatmaps | **Moosend** | Included in paid; not available in Kit |
 | Seasonal sender | **Moosend** | Pay-as-you-go credit option; no monthly commitment |
 | Business with cold contacts on list | **Moosend** | Engaged-only billing saves real money |
@@ -124,7 +124,7 @@ Kit and Moosend serve fundamentally different users. Kit is built for individual
 
 **Choose Kit if** you are building an audience around your personal brand, want to monetize directly through digital products or paid subscriptions, and value the free plan for getting started. The $33/mo Creator tier is appropriate for lists under ~10,000.
 
-**Choose Moosend if** you run an e-commerce business, need maximum automation depth at the lowest price, have a list with meaningful inactive contacts (billing advantage), or want heatmaps and unlimited automation for $7–$32/mo.
+**Choose Moosend if** you run an e-commerce business, need maximum automation depth at the lowest price, have a list with meaningful inactive contacts (billing advantage), or want heatmaps and unlimited automation for $9–$32/mo.
 
 **At 25,000+ subscribers,** prices converge and the decision becomes purely about use case, not cost.
 

@@ -332,6 +332,12 @@ ${siteHeader("/")}
   <div class="articles-grid" role="list">
 ${cards}
   </div>
+
+  <section class="about-section" aria-label="About the reviewer">
+    <h2 class="about-heading">About the Reviewer</h2>
+    <p class="about-text">Silicon Valley born and raised. 20+ years of professional experience. And apparently this is what I do for fun.</p>
+    <p class="about-text">I test email marketing tools so you don&#8217;t have to sit through 47 demo calls. Honest reviews, zero BS. Enjoy the Duel. &#x2694;&#xFE0F;</p>
+  </section>
 </main>
 
 ${siteFooter()}`;

@@ -24,7 +24,7 @@ Kit is the best email marketing platform for individual creators monetizing an a
 | Creator | $33/mo | ~$32.50/mo (~$390/yr) | Unlimited |
 | Pro | $66/mo | ~$65.83/mo (~$790/yr) | Unlimited |
 
-**Annual discount: ~16% (approximately 2 months free).**
+**Best available deal:** Annual billing saves ~16% (2 months free). No promo codes exist for Kit — annual billing IS the best price. Monthly: $39/mo. Annual: $33/mo. Also includes a 30-day money-back guarantee.
 
 ### Creator Plan — List Size Scaling
 

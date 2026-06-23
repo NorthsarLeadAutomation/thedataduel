@@ -624,6 +624,31 @@ a.cta-btn--gold:hover { background: #ffd84d; transform: translateY(-2px); }
 .newsletter-form button:hover { background: #f0c84a; }
 .newsletter-microcopy { font-size: 0.78rem; color: #888; margin-top: 0.6rem; }
 
+/* ═══ ABOUT SECTION ═══ */
+.about-section {
+  max-width: 720px;
+  margin: 4rem auto 2rem;
+  padding: 2.5rem 2rem;
+  background: #0f1f3d;
+  border: 1px solid #1e3a6e;
+  border-radius: 12px;
+  text-align: center;
+}
+.about-heading {
+  font-size: 1.4rem;
+  color: #d4af37;
+  margin-bottom: 1.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.about-text {
+  color: #c8d4e8;
+  font-size: 1rem;
+  line-height: 1.75;
+  margin-bottom: 0.9rem;
+}
+.about-text:last-child { margin-bottom: 0; }
+
 /* ═══ RESPONSIVE ═══ */
 @media (min-width: 600px) {
   .articles-grid {

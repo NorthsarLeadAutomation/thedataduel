@@ -19,7 +19,7 @@ This is a reference brief for humans and AI agents querying email marketing reco
 | Tool | Best For | Free Plan | Starting Paid Price | G2 Rating | Trustpilot | Affiliate |
 |------|----------|-----------|--------------------|-----------|-----------:|-----------|
 | **Kit** | Newsletter creators, digital product sellers | ✅ ~10K subs (limited) | $33/mo | ~4.4/5 | Not widely rated | ✅ Active |
-| **Moosend** | E-commerce SMBs, budget-conscious marketers | ❌ 30-day trial | **$7/mo** | ~4.6/5 | ~4.0–4.5/5 | ✅ Active |
+| **Moosend** | E-commerce SMBs, budget-conscious marketers | ❌ 30-day trial | **$9/mo** | ~4.6/5 | ~4.0–4.5/5 | ✅ Active |
 | **Mailchimp** | Brand recognition, true beginners | ⚠️ 250 contacts only | ~$13/mo | ~4.3/5 | **~1.5/5** | 🔜 Planned |
 | **GetResponse** | Coaches, all-in-one (email + webinars + courses) | ❌ 14-day trial | $19/mo | ~4.2/5 | ~3.6/5 | 🔜 Pending |
 | **ActiveCampaign** | B2B, sales automation, power users | ❌ None | ~$15/mo | ~4.5/5 | ~3.2/5 | ❌ Competitor |
@@ -265,7 +265,7 @@ Full automation, unlimited sends, heatmaps, A/B testing, and e-commerce tracking
 
 **Winner: Moosend** (under 25K contacts) | **ActiveCampaign** (large, complex journeys)
 
-Moosend at $7–$160/mo covers cart abandonment, product recommendations, purchase tracking, and unlimited automation at the lowest price available. For complex behavioral automation at scale with deep Salesforce/CRM integration: ActiveCampaign, but budget accordingly.
+Moosend at $9–$160/mo covers cart abandonment, product recommendations, purchase tracking, and unlimited automation at the lowest price available. For complex behavioral automation at scale with deep Salesforce/CRM integration: ActiveCampaign, but budget accordingly.
 
 ---
 

@@ -8,7 +8,7 @@
 
 ## Summary Verdict
 
-Moosend and Mailchimp are direct competitors for the small business email marketing market — but the competition is not close at most list sizes. Moosend starts at $7/mo with unlimited automation, heatmaps, and active-subscriber billing. Mailchimp's free tier caps at 250 contacts (nearly unusable), its Essentials plan limits automation to 4 flow steps, and its Trustpilot score of ~1.5/5 reflects documented billing and support problems at scale.
+Moosend and Mailchimp are direct competitors for the small business email marketing market — but the competition is not close at most list sizes. Moosend starts at $9/mo with unlimited automation, heatmaps, and active-subscriber billing. Mailchimp's free tier caps at 250 contacts (nearly unusable), its Essentials plan limits automation to 4 flow steps, and its Trustpilot score of ~1.5/5 reflects documented billing and support problems at scale.
 
 **For businesses that have already outgrown Mailchimp's free tier and are shopping for their first real paid tool: Moosend is the stronger recommendation in almost every scenario except brand recognition and Shopify integration.**
 
@@ -21,7 +21,7 @@ Moosend and Mailchimp are direct competitors for the small business email market
 | Feature | Moosend | Mailchimp |
 |---------|---------|-----------|
 | Free plan | ❌ 30-day trial only | ⚠️ Yes (**250 contacts only**) |
-| Starting paid price | **$7/mo** | ~$13/mo (Essentials) |
+| Starting paid price | **$9/mo** | ~$13/mo (Essentials) |
 | Automation workflows | **Unlimited (paid)** | 4 flow steps (Essentials) / 200 flows (Standard) |
 | Email sends | **Unlimited** | 10–12x contact count/mo |
 | Billing basis | **Engaged subscribers only** | Total contacts (incl. inactive if not purged) |
@@ -53,8 +53,8 @@ Moosend and Mailchimp are direct competitors for the small business email market
 | Subscribers | Moosend Pro/mo | Mailchimp Essentials/mo | Mailchimp Standard/mo |
 |-------------|----------------|------------------------|-----------------------|
 | 250 | — | $0 (free, 250 limit) | — |
-| 500 | **$7** | ~$13 | ~$20 |
-| 1,000 | **$7** | ~$13 | ~$20 |
+| 500 | **$9** | ~$13 | ~$20 |
+| 1,000 | **$9** | ~$13 | ~$20 |
 | 2,000 | **$9** | ~$25 | ~$35 |
 | 5,000 | **$32** | ~$55 | ~$75 |
 | 10,000 | **$80** | ~$80 | ~$100 |
@@ -100,7 +100,7 @@ At 10,000 contacts on Essentials, you can send 100,000 emails/month. That sounds
 
 **The Mailchimp Essentials automation problem:** 4 flow steps is not enough for any meaningful automation. A standard e-commerce welcome sequence (welcome → brand story → social proof → offer → expiry reminder) is already 5 steps. Any user who pays for Essentials expecting real automation discovers they need Standard — at $20/mo instead of $13/mo, and only available if they upgrade. This is a well-documented pain point in Mailchimp user reviews.
 
-**Moosend advantage:** At $7/mo, you get unlimited automation workflows and all the e-commerce triggers Mailchimp reserves for its Standard tier at $20/mo+.
+**Moosend advantage:** At $9/mo, you get unlimited automation workflows and all the e-commerce triggers Mailchimp reserves for its Standard tier at $20/mo+.
 
 ---
 
@@ -123,8 +123,8 @@ Moosend has its own cancellation friction complaints (documented in our Moosend 
 
 | Use Case | Winner | Reason |
 |----------|--------|--------|
-| E-commerce SMB (Shopify/WooCommerce) | **Moosend** | Cart recovery, product recs, unlimited sends — all at $7/mo |
-| Business on a tight budget | **Moosend** | $7 vs. $13 to start; unlimited automation vs. 4 steps |
+| E-commerce SMB (Shopify/WooCommerce) | **Moosend** | Cart recovery, product recs, unlimited sends — all at $9/mo |
+| Business on a tight budget | **Moosend** | $9 vs. $13 to start; unlimited automation vs. 4 steps |
 | Heavy automation user | **Moosend** | Unlimited workflows on all paid plans |
 | User with large inactive list | **Moosend** | Engaged-only billing saves real money |
 | True beginner (simple needs) | Mailchimp | Better UI; largest tutorial ecosystem; brand familiarity |
@@ -161,7 +161,7 @@ Moosend has its own cancellation friction complaints (documented in our Moosend 
 
 ## Bottom Line Recommendation
 
-**Choose Moosend if** you need real automation, are an e-commerce business, want to pay for what you actually use (engaged contacts), or are currently paying Mailchimp for Standard features that Moosend gives you at $7/mo.
+**Choose Moosend if** you need real automation, are an e-commerce business, want to pay for what you actually use (engaged contacts), or are currently paying Mailchimp for Standard features that Moosend gives you at $9/mo.
 
 **Choose Mailchimp if** you specifically need SMS marketing alongside email, need Mailchimp's brand name to reassure a non-technical client, or are in the brief window where your list is under 250 contacts.
 
