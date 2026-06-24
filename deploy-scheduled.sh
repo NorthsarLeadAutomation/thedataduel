@@ -7,7 +7,7 @@ cd /Users/northstarleadautomation/.openclaw/workspace/projects/thedataduel
 echo "[$(date)] Starting scheduled deploy..."
 
 # Build
-node build.js
+/opt/homebrew/bin/node build.js
 if [ $? -ne 0 ]; then
   echo "[$(date)] BUILD FAILED — aborting deploy" >&2
   exit 1
