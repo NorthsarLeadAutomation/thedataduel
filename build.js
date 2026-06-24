@@ -54,6 +54,14 @@ const ARTICLE_CTAS = {
   "moosend-vs-kit-budget":              ["moosend", "kit"],
   "top-3-getresponse-alternatives-creators": ["kit", "moosend"],
   "webflow-vs-wordpress-2026":          [],
+  // Pricing breakdown articles
+  "mailchimp-pricing-hidden-costs-2026":  ["moosend", "kit"],
+  "moosend-pricing-breakdown-2026":       ["moosend"],
+  "kit-pricing-breakdown-2026":           ["kit"],
+  // Topic cluster articles
+  "mailchimp-vs-moosend-deliverability":  ["moosend"],
+  "how-to-migrate-mailchimp-to-kit":      ["kit", "moosend"],
+  "email-marketing-for-small-business-2026": ["moosend", "kit"],
 };
 
 function buildFloatingPanel(slug) {

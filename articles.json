@@ -2,7 +2,7 @@
   "site": "The Data Duel",
   "url": "https://thedataduel.com",
   "description": "Independent reviews and comparisons of email marketing tools.",
-  "updated": "2026-06-24T14:36:24.092Z",
+  "updated": "2026-06-24T19:21:48.629Z",
   "articles": [
     {
       "title": "Best Email Marketing Tools 2026 — Honest Roundup",
@@ -84,6 +84,18 @@
       ]
     },
     {
+      "title": "Best Email Marketing for Small Businesses in 2026: What Actually Works",
+      "slug": "email-marketing-for-small-business-2026",
+      "url": "https://thedataduel.com/articles/email-marketing-for-small-business-2026",
+      "type": "Article",
+      "excerpt": "Before comparing platforms, it's worth being explicit about what small businesses should evaluate:",
+      "date": "June 2026",
+      "affiliates": [
+        "Moosend",
+        "Kit (ConvertKit)"
+      ]
+    },
+    {
       "title": "GetResponse vs Mailchimp: Which Is Better in 2026?",
       "slug": "getresponse-vs-mailchimp-2026",
       "url": "https://thedataduel.com/articles/getresponse-vs-mailchimp-2026",
@@ -95,6 +107,29 @@
       ]
     },
     {
+      "title": "How to Migrate from Mailchimp to Kit in 2026 (Without Losing Your List)",
+      "slug": "how-to-migrate-mailchimp-to-kit",
+      "url": "https://thedataduel.com/articles/how-to-migrate-mailchimp-to-kit",
+      "type": "Article",
+      "excerpt": "Rushing the export is the most common migration mistake. Take 30–60 minutes to document your current setup before touching anything.",
+      "date": "June 2026",
+      "affiliates": [
+        "Kit (ConvertKit)",
+        "Moosend"
+      ]
+    },
+    {
+      "title": "Kit (ConvertKit) Pricing 2026: Full Breakdown for Creators and Newsletter Writers",
+      "slug": "kit-pricing-breakdown-2026",
+      "url": "https://thedataduel.com/articles/kit-pricing-breakdown-2026",
+      "type": "Article",
+      "excerpt": "Kit offers three plans: Free, Creator, and Creator Pro. Each tier is designed around a specific stage of the creator journey.",
+      "date": "June 2026",
+      "affiliates": [
+        "Kit (ConvertKit)"
+      ]
+    },
+    {
       "title": "Kit vs. GetResponse: Which Is Better in 2026?",
       "slug": "kit-vs-getresponse-2026",
       "url": "https://thedataduel.com/articles/kit-vs-getresponse-2026",
@@ -103,6 +138,40 @@
       "date": "June 2026",
       "affiliates": [
         "Kit (ConvertKit)"
+      ]
+    },
+    {
+      "title": "Mailchimp Pricing 2026: The Hidden Costs They Don't Advertise",
+      "slug": "mailchimp-pricing-hidden-costs-2026",
+      "url": "https://thedataduel.com/articles/mailchimp-pricing-hidden-costs-2026",
+      "type": "Article",
+      "excerpt": "Mailchimp offers four tiers: Free, Essentials, Standard, and Premium. Here's what each plan costs at the contact levels that matter most to small and mid-size businesses.",
+      "date": "June 2026",
+      "affiliates": [
+        "Moosend",
+        "Kit (ConvertKit)"
+      ]
+    },
+    {
+      "title": "Mailchimp vs Moosend Email Deliverability 2026: Which Actually Reaches the Inbox?",
+      "slug": "mailchimp-vs-moosend-deliverability",
+      "url": "https://thedataduel.com/articles/mailchimp-vs-moosend-deliverability",
+      "type": "Comparison",
+      "excerpt": "First, a clear definition. Deliverability is not the same as \"delivered.\" Your email marketing platform will show you a \"delivered\" rate that excludes hard bounces — but an email that lands in the spam folder is technic…",
+      "date": "June 2026",
+      "affiliates": [
+        "Moosend"
+      ]
+    },
+    {
+      "title": "Moosend Pricing 2026: Full Breakdown — Every Tier, Every Feature, Every Dollar",
+      "slug": "moosend-pricing-breakdown-2026",
+      "url": "https://thedataduel.com/articles/moosend-pricing-breakdown-2026",
+      "type": "Article",
+      "excerpt": "Almost everyone uses Moosend Pro. It's a single paid tier with pricing that scales based on your subscriber count — no artificial feature gating between \"Standard\" and \"Premium\" tiers like competitors use.",
+      "date": "June 2026",
+      "affiliates": [
+        "Moosend"
       ]
     },
     {
