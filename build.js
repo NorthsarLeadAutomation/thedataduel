@@ -358,16 +358,9 @@ async function generateArticlePage(meta) {
     htmlBody = `<pre>${esc(meta.src)}</pre>`;
   }
 
-  // Strip inline duplicate disclosures rendered from markdown
-  // ("Last updated: ..." italic lines and blockquote affiliate notices)
+  // Strip the redundant "Last updated" italic metadata line from markdown
+  // (keep the blockquote grey-box disclosure — that's the preferred style)
   htmlBody = htmlBody.replace(/<p><em>Last updated:[^<]*<\/em><\/p>\s*/gi, '');
-  htmlBody = htmlBody.replace(/<blockquote>\s*<p><em>Northstar may earn[^<]*<\/em><\/p>\s*<\/blockquote>\s*/gi, '');
-
-  // Insert single clean disclosure after the h1
-  htmlBody = htmlBody.replace(
-    /<\/h1>/,
-    '</h1>\n<p class="affiliate-disclosure">Northstar Reviews may earn a commission if you purchase through affiliate links in this content, at no extra cost to you.</p>'
-  );
 
   // Replace /visit/ links with broker subdomain placeholder
   htmlBody = htmlBody.replace(
