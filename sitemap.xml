@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://thedataduel.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://thedataduel.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://thedataduel.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://thedataduel.com/articles/best-email-marketing-tools-2026</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://thedataduel.com/articles/kit-review</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://thedataduel.com/articles/kit-vs-mailchimp</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>2026-06-24</lastmod></url>

@@ -202,6 +202,11 @@ function siteFooter() {
       THE DATA DUEL
     </span>
     <p>© 2026 The Data Duel. Independent reviews. Affiliate disclosure: some links may earn a commission.</p>
+    <p style="margin-top:0.5rem;font-size:0.8rem;">
+      <a href="/privacy" style="color:var(--muted);text-decoration:none;">Privacy Policy</a>
+      <span style="margin:0 6px;opacity:0.5;">·</span>
+      <a href="/terms" style="color:var(--muted);text-decoration:none;">Terms of Service</a>
+    </p>
     <p style="margin-top:1rem">
       <a href="https://northstarleadautomation.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:8px;text-decoration:none;opacity:0.85;transition:opacity 0.2s" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.85'">
         <img src="/assets/northstar-logo.png" alt="Northstar Lead Automation" style="height:32px;width:auto;vertical-align:middle">
@@ -353,6 +358,17 @@ async function generateArticlePage(meta) {
     htmlBody = `<pre>${esc(meta.src)}</pre>`;
   }
 
+  // Strip inline duplicate disclosures rendered from markdown
+  // ("Last updated: ..." italic lines and blockquote affiliate notices)
+  htmlBody = htmlBody.replace(/<p><em>Last updated:[^<]*<\/em><\/p>\s*/gi, '');
+  htmlBody = htmlBody.replace(/<blockquote>\s*<p><em>Northstar may earn[^<]*<\/em><\/p>\s*<\/blockquote>\s*/gi, '');
+
+  // Insert single clean disclosure after the h1
+  htmlBody = htmlBody.replace(
+    /<\/h1>/,
+    '</h1>\n<p class="affiliate-disclosure">Northstar Reviews may earn a commission if you purchase through affiliate links in this content, at no extra cost to you.</p>'
+  );
+
   // Replace /visit/ links with broker subdomain placeholder
   htmlBody = htmlBody.replace(
     /href="\/visit\//g,
@@ -413,11 +429,101 @@ function buildJsonLd(meta) {
   return '<script type="application/ld+json">' + JSON.stringify(schema) + '<\/script>';
 }
 
+// ── Legal pages ───────────────────────────────────────────────────────────
+function generateTermsPage() {
+  return `${pageHead('Terms of Service', 'Terms of Service for The Data Duel.', 'style.css')}
+${siteHeader('/')}
+<main class="article-page" id="main-content">
+  <div class="article-nav" aria-label="Breadcrumb">
+    <div class="article-nav-inner">
+      <a href="/" class="back-link">Back to home</a>
+    </div>
+  </div>
+  <div class="article-body">
+    <h1>Terms of Service</h1>
+    <p class="affiliate-disclosure"><em>Last updated: June 2026</em></p>
+    <h2>1. Acceptance of Terms</h2>
+    <p>By accessing and using The Data Duel (thedataduel.com), you accept and agree to be bound by these Terms of Service. If you do not agree, please do not use this site.</p>
+    <h2>2. Informational Content</h2>
+    <p>All content on The Data Duel is provided for informational purposes only. Reviews, comparisons, and recommendations reflect the opinions of Northstar Lead Automation based on independent research. Nothing on this site constitutes professional financial, legal, or technical advice.</p>
+    <h2>3. Affiliate Disclosure</h2>
+    <p>The Data Duel participates in affiliate programs. Some links on this site may earn us a commission if you make a purchase — at no additional cost to you. Affiliate relationships do not influence our editorial opinions. All reviews are independent.</p>
+    <h2>4. Accuracy of Information</h2>
+    <p>We make reasonable efforts to keep pricing, feature, and availability information accurate. However, software products change frequently. Always verify current details directly with the vendor before making a purchase decision.</p>
+    <h2>5. External Links</h2>
+    <p>This site links to third-party websites, including affiliate partners. We are not responsible for the content, privacy practices, or availability of those sites.</p>
+    <h2>6. Intellectual Property</h2>
+    <p>All original content, design, and code on The Data Duel is owned by Northstar Lead Automation. You may share articles with attribution but may not republish or reproduce content in full without written permission.</p>
+    <h2>7. Limitation of Liability</h2>
+    <p>The Data Duel and Northstar Lead Automation are not liable for any damages arising from your use of this site or reliance on its content.</p>
+    <h2>8. Changes to Terms</h2>
+    <p>We reserve the right to update these terms at any time. Continued use of the site following any changes constitutes acceptance of the revised terms.</p>
+    <h2>9. Contact</h2>
+    <p>Questions? Email us at <a href="mailto:support@northstarleadautomation.com">support@northstarleadautomation.com</a>.</p>
+  </div>
+</main>
+${siteFooter()}`;
+}
+
+function generatePrivacyPage() {
+  return `${pageHead('Privacy Policy', 'Privacy Policy for The Data Duel.', 'style.css')}
+${siteHeader('/')}
+<main class="article-page" id="main-content">
+  <div class="article-nav" aria-label="Breadcrumb">
+    <div class="article-nav-inner">
+      <a href="/" class="back-link">Back to home</a>
+    </div>
+  </div>
+  <div class="article-body">
+    <h1>Privacy Policy</h1>
+    <p class="affiliate-disclosure"><em>Last updated: June 2026</em></p>
+    <p>Northstar Lead Automation (\"we,\" \"us,\" or \"our\") operates The Data Duel at thedataduel.com. This Privacy Policy explains what information we collect, how we use it, and your rights.</p>
+    <h2>1. Information We Collect</h2>
+    <h3>a) Automatically Collected</h3>
+    <ul>
+      <li><strong>Click tracking:</strong> When you click an affiliate link, our broker (broker.thedataduel.com) records a click ID and the destination. This is used solely to attribute commissions accurately. No personally identifying information is stored.</li>
+      <li><strong>Usage data:</strong> Like most websites, we may log standard server data such as page views, referrer URLs, and browser type through our hosting provider.</li>
+    </ul>
+    <h3>b) Provided by You</h3>
+    <ul>
+      <li><strong>Email address:</strong> If you subscribe to our newsletter, your email address is collected and stored by Kit (ConvertKit). See Kit's <a href="https://kit.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.</li>
+    </ul>
+    <h2>2. How We Use Your Information</h2>
+    <ul>
+      <li>To send the weekly Data Duel newsletter (email subscribers only)</li>
+      <li>To track affiliate commissions for accounting purposes</li>
+      <li>To improve the site based on anonymous usage patterns</li>
+    </ul>
+    <h2>3. Cookies</h2>
+    <p>Our affiliate tracking system may set a short-lived session identifier when you click an affiliate link. This is used only for commission attribution and expires quickly. We do not use advertising tracking cookies or behavioral profiling.</p>
+    <h2>4. Third-Party Services</h2>
+    <ul>
+      <li><strong>Kit (ConvertKit)</strong> — newsletter delivery. <a href="https://kit.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+      <li><strong>Moosend</strong> — affiliate partner. <a href="https://moosend.com/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+      <li><strong>Cloudflare</strong> — hosting and CDN. <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+    </ul>
+    <h2>5. Data Sharing</h2>
+    <p>We do not sell, rent, or trade your personal information. We share data only with the service providers listed above, as necessary to operate the site and newsletter.</p>
+    <h2>6. Your Rights</h2>
+    <p>You may unsubscribe from the newsletter at any time using the link in any email. To request deletion of your data, contact us at <a href="mailto:support@northstarleadautomation.com">support@northstarleadautomation.com</a>.</p>
+    <h2>7. Children</h2>
+    <p>This site is not directed at children under 13. We do not knowingly collect data from children.</p>
+    <h2>8. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy. We will post the revised policy on this page with an updated date.</p>
+    <h2>9. Contact</h2>
+    <p>Questions? Email: <a href="mailto:support@northstarleadautomation.com">support@northstarleadautomation.com</a></p>
+  </div>
+</main>
+${siteFooter()}`;
+}
+
 // ── Sitemap generator ─────────────────────────────────────────────────────
 function generateSitemap(articles) {
   const today = new Date().toISOString().split("T")[0];
   const urls = [
-    `  <url><loc>https://thedataduel.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>${today}</lastmod></url>`
+    `  <url><loc>https://thedataduel.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority><lastmod>${today}</lastmod></url>`,
+    `  <url><loc>https://thedataduel.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>${today}</lastmod></url>`,
+    `  <url><loc>https://thedataduel.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority><lastmod>${today}</lastmod></url>`
   ];
   for (const a of articles) {
     urls.push(`  <url><loc>https://thedataduel.com/articles/${a.slug}</loc><changefreq>monthly</changefreq><priority>0.8</priority><lastmod>${today}</lastmod></url>`);
@@ -501,6 +607,15 @@ async function main() {
   const indexPath = join(__dirname, "index.html");
   await writeFile(indexPath, indexHtml, "utf8");
   console.log("   ✅ index.html");
+
+  // Generate legal pages
+  const termsHtml = generateTermsPage();
+  await writeFile(join(__dirname, "terms.html"), termsHtml, "utf8");
+  console.log("   ✅ terms.html");
+
+  const privacyHtml = generatePrivacyPage();
+  await writeFile(join(__dirname, "privacy.html"), privacyHtml, "utf8");
+  console.log("   ✅ privacy.html");
 
   // Generate sitemap.xml
   const sitemapXml = generateSitemap(articles);
