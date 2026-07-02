@@ -164,7 +164,7 @@ Both are adequate. The better option depends on your context.
 
 If you're already using Kit to grow your email list, this changes everything.
 
-Kit just launched **[Kit MCP](https://partners.kit.com/6n7t1ckyvkh8)** — a Model Context Protocol integration that lets you connect Claude, ChatGPT, Gemini, Microsoft Copilot, or any MCP-compatible AI tool directly to your Kit account. Think of it as giving your AI assistant a live backstage pass to your entire email operation.
+Kit just launched **[Kit MCP](https://broker.thedataduel.com/visit/convertkit)** — a Model Context Protocol integration that lets you connect Claude, ChatGPT, Gemini, Microsoft Copilot, or any MCP-compatible AI tool directly to your Kit account. Think of it as giving your AI assistant a live backstage pass to your entire email operation.
 
 **What does that actually mean for creators?**
 
@@ -179,7 +179,7 @@ On the **write side**, your AI can tag and segment subscribers, add or update su
 - Bulk-enrolling a new lead segment into the right nurture sequence in one command
 - Weekly performance reviews with your AI pulling the numbers automatically
 
-You're in full control. Set permissions, revoke access anytime. No credit card required — [Kit MCP](https://partners.kit.com/6n7t1ckyvkh8) is included in the 14-day free trial.
+You're in full control. Set permissions, revoke access anytime. No credit card required — [Kit MCP](https://broker.thedataduel.com/visit/convertkit) is included in the 14-day free trial.
 
 If AI is part of your creator workflow (and it should be), this is the integration that makes Kit the obvious choice.
 
@@ -210,4 +210,4 @@ For pure creators: Kit is the clear winner. It's built for you, the experience i
 
 For businesses and serious marketers: GetResponse is worth a look if deep automation and webinars are your priority.
 
-But if you're a creator building an audience and selling digital products — [start your Kit free trial here](https://partners.kit.com/6n7t1ckyvkh8). No credit card required.
+But if you're a creator building an audience and selling digital products — [start your Kit free trial here](https://broker.thedataduel.com/visit/convertkit). No credit card required.
