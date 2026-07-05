@@ -28,7 +28,13 @@ const FOOTER_LOGO_SVG = `<img src="/assets/northstar-logo-transparent.png" width
 const AFFILIATE_TOOLS = {
   kit: {
     name: "Kit (ConvertKit)",
-    url: "https://broker.thedataduel.com/visit/convertkit",
+    url: "https://broker.thedataduel.com/visit/convertkit",   // homepage — general articles
+    tagline: "Best for creators & newsletters",
+    color: "#FB6970",
+  },
+  "kit-pricing": {
+    name: "Kit (ConvertKit)",
+    url: "https://broker.thedataduel.com/visit/convertkit-pricing",  // pricing page — BOFU
     tagline: "Best for creators & newsletters",
     color: "#FB6970",
   },
@@ -41,27 +47,31 @@ const AFFILIATE_TOOLS = {
 };
 
 // Which tools to show CTAs for, per article slug
+// BOFU articles → "kit-pricing" (links to pricing page); general articles → "kit" (homepage)
 const ARTICLE_CTAS = {
-  "kit-review":                         ["kit"],
+  "kit-review":                         ["kit-pricing"],
   "moosend-review":                      ["moosend"],
-  "kit-vs-mailchimp":                    ["kit"],
-  "kit-vs-moosend":                      ["kit", "moosend"],
+  "kit-vs-mailchimp":                    ["kit-pricing"],
+  "kit-vs-moosend":                      ["kit-pricing", "moosend"],
   "moosend-vs-mailchimp":               ["moosend"],
-  "kit-vs-getresponse-2026":            ["kit"],
+  "kit-vs-getresponse-2026":            ["kit-pricing"],
   "getresponse-vs-mailchimp-2026":      ["moosend"],
   "best-email-marketing-tools-2026":    ["kit", "moosend"],
   "best-kit-alternatives-2026":         ["moosend"],
-  "moosend-vs-kit-budget":              ["moosend", "kit"],
+  "moosend-vs-kit-budget":              ["moosend", "kit-pricing"],
   "top-3-getresponse-alternatives-creators": ["kit", "moosend"],
   "webflow-vs-wordpress-2026":          [],
   // Pricing breakdown articles
-  "mailchimp-pricing-hidden-costs-2026":  ["moosend", "kit"],
+  "mailchimp-pricing-hidden-costs-2026":  ["moosend", "kit-pricing"],
   "moosend-pricing-breakdown-2026":       ["moosend"],
-  "kit-pricing-breakdown-2026":           ["kit"],
+  "kit-pricing-breakdown-2026":           ["kit-pricing"],
   // Topic cluster articles
   "mailchimp-vs-moosend-deliverability":  ["moosend"],
-  "how-to-migrate-mailchimp-to-kit":      ["kit", "moosend"],
+  "how-to-migrate-mailchimp-to-kit":      ["kit-pricing", "moosend"],
   "email-marketing-for-small-business-2026": ["moosend", "kit"],
+  // Klaviyo comparison articles
+  "kit-vs-klaviyo-2026":                  ["kit-pricing"],
+  "moosend-vs-klaviyo-2026":              ["moosend", "kit-pricing"],
 };
 
 function buildFloatingPanel(slug) {
@@ -70,7 +80,7 @@ function buildFloatingPanel(slug) {
 
   const buttons = keys.map((key) => {
     const tool = AFFILIATE_TOOLS[key];
-    const short = key === "kit" ? "Kit" : "Moosend";
+    const short = key.includes("moosend") ? "Moosend" : "Kit";
     return '<a href="' + tool.url + '" class="floating-affiliate-btn" target="_blank" rel="noopener noreferrer sponsored" aria-label="Try ' + tool.name + '">'
       + '<span class="floating-affiliate-label">' + short + '</span>'
       + '<span class="floating-affiliate-arrow">&rarr;</span>'
