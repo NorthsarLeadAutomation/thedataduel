@@ -144,12 +144,13 @@ function extractExcerpt(src, maxLen = 220) {
     }
     if (inFrontmatter) continue;
 
-    // Skip headings, blockquotes, blank lines, HTML comments
+    // Skip headings, blockquotes, blank lines, HTML comments, and "Last updated" lines
     if (
       line.startsWith("#") ||
       line.startsWith(">") ||
       line.startsWith("<!--") ||
-      line.trim() === ""
+      line.trim() === "" ||
+      /last updated/i.test(line)
     ) continue;
 
     const clean = line

@@ -2,14 +2,14 @@
   "site": "The Data Duel",
   "url": "https://thedataduel.com",
   "description": "Independent reviews and comparisons of email marketing tools.",
-  "updated": "2026-07-07T13:22:31.132Z",
+  "updated": "2026-07-07T13:27:10.902Z",
   "articles": [
     {
       "title": "Best Email Marketing Tools 2026 — Honest Roundup",
       "slug": "best-email-marketing-tools-2026",
       "url": "https://thedataduel.com/articles/best-email-marketing-tools-2026",
       "type": "Roundup",
-      "excerpt": "Last updated: June 2026 | Northstar Lead Automation",
+      "excerpt": "| Tool | Best For | Free Plan | Starting Paid Price | G2 Rating | Trustpilot | Affiliate |",
       "date": "July 7, 2026",
       "affiliates": [
         "Kit (ConvertKit)",
@@ -21,7 +21,7 @@
       "slug": "kit-review",
       "url": "https://thedataduel.com/articles/kit-review",
       "type": "Review",
-      "excerpt": "Last updated: June 2026 | Northstar Lead Automation",
+      "excerpt": "| Plan | Monthly Billing | Annual Billing | Contacts |",
       "date": "July 7, 2026",
       "affiliates": [
         "Kit (ConvertKit)"
@@ -32,7 +32,7 @@
       "slug": "kit-vs-mailchimp",
       "url": "https://thedataduel.com/articles/kit-vs-mailchimp",
       "type": "Comparison",
-      "excerpt": "Last updated: June 2026 | Northstar Lead Automation",
+      "excerpt": "| Feature | Kit | Mailchimp |",
       "date": "July 7, 2026",
       "affiliates": [
         "Kit (ConvertKit)"
@@ -43,7 +43,7 @@
       "slug": "kit-vs-moosend",
       "url": "https://thedataduel.com/articles/kit-vs-moosend",
       "type": "Comparison",
-      "excerpt": "Last updated: June 2026 | Northstar Lead Automation",
+      "excerpt": "| Feature | Kit | Moosend |",
       "date": "July 7, 2026",
       "affiliates": [
         "Kit (ConvertKit)",
@@ -55,7 +55,7 @@
       "slug": "moosend-review",
       "url": "https://thedataduel.com/articles/moosend-review",
       "type": "Review",
-      "excerpt": "Last updated: June 2026 | Northstar Lead Automation",
+      "excerpt": "| Plan | Starting Price | Contacts | Email Sends |",
       "date": "July 7, 2026",
       "affiliates": [
         "Moosend"
@@ -66,7 +66,7 @@
       "slug": "moosend-vs-mailchimp",
       "url": "https://thedataduel.com/articles/moosend-vs-mailchimp",
       "type": "Comparison",
-      "excerpt": "Last updated: June 2026 | Northstar Lead Automation",
+      "excerpt": "| Feature | Moosend | Mailchimp |",
       "date": "July 7, 2026",
       "affiliates": [
         "Moosend"
