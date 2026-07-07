@@ -166,6 +166,37 @@ function extractExcerpt(src, maxLen = 220) {
   return "";
 }
 
+/**
+ * Parse YAML-style frontmatter from the top of a markdown file.
+ * Expects:  ---\nkey: value\n---\n  at the very start of the file.
+ * Returns { data: {key:val,...}, body: restOfFile }
+ */
+function parseFrontmatter(src) {
+  if (!src.startsWith('---\n') && !src.startsWith('---\r\n')) return { data: {}, body: src };
+  const end = src.indexOf('\n---\n', 4);
+  if (end === -1) return { data: {}, body: src };
+  const block = src.slice(4, end);
+  const body = src.slice(end + 5); // skip \n---\n
+  const data = {};
+  for (const line of block.split('\n')) {
+    const m = /^([a-zA-Z_][a-zA-Z0-9_]*):\s*(.+)$/.exec(line.trim());
+    if (m) data[m[1]] = m[2].trim();
+  }
+  return { data, body };
+}
+
+/**
+ * Format an ISO date string (2026-07-07) → "July 7, 2026".
+ * Falls back to the raw string if not a recognised ISO date.
+ */
+function formatDateDisplay(s) {
+  const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec((s || '').trim());
+  if (!m) return s || 'June 2026';
+  const months = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+  return `${months[parseInt(m[2], 10) - 1]} ${parseInt(m[3], 10)}, ${m[1]}`;
+}
+
 /** HTML-escape a string. */
 function esc(s) {
   return String(s)
@@ -296,13 +327,16 @@ async function loadArticles() {
     const slug = file.replace(/\.md$/, "");
     try {
       const src = await readFile(join(CONTENT_DIR, file), "utf8");
+      const { data: fm, body: articleBody } = parseFrontmatter(src);
+      const dateIso = fm.date || '2026-06-01';
       metas.push({
         slug,
-        title: extractTitle(src),
-        excerpt: extractExcerpt(src),
+        title: extractTitle(articleBody),
+        excerpt: extractExcerpt(articleBody),
         badge: inferBadge(slug),
-        date: "June 2026",
-        src,
+        date: formatDateDisplay(dateIso),
+        dateIso,
+        src: articleBody,
       });
     } catch (err) {
       console.warn(`  WARN: Could not read ${file}: ${err.message}`);
@@ -391,7 +425,7 @@ async function generateArticlePage(meta) {
     "https://broker.thedataduel.com/visit/",
   );
 
-  const description = `${meta.title} — Independent reviews and comparisons for email marketing tools. The Data Duel.`;
+  const description = `${meta.title} — Updated ${meta.date}. Independent reviews and comparisons for email marketing tools. The Data Duel.`;
 
   return `${pageHead(meta.title, description, "../style.css")}
 ${buildJsonLd(meta)}
@@ -407,7 +441,7 @@ ${siteHeader("/")}
 
   <header class="article-header">
     <div class="card-badge ${badgeClass(meta.badge)}" style="margin-bottom:1rem">${esc(meta.badge)}</div>
-
+    <p class="article-updated" style="font-size:0.85rem;color:var(--muted,#888);margin:0.25rem 0 1rem;"><em>Last updated: ${esc(meta.date)}</em></p>
   </header>
 
   <div class="article-body">
@@ -431,8 +465,8 @@ function buildJsonLd(meta) {
     "headline": meta.title,
     "description": meta.excerpt,
     "url": "https://thedataduel.com/articles/" + meta.slug,
-    "datePublished": meta.date,
-    "dateModified": meta.date,
+    "datePublished": meta.dateIso,
+    "dateModified": meta.dateIso,
     "author": { "@type": "Organization", "name": "The Data Duel", "url": "https://thedataduel.com" },
     "publisher": { "@type": "Organization", "name": "The Data Duel", "url": "https://thedataduel.com" },
     "mainEntityOfPage": { "@type": "WebPage", "@id": "https://thedataduel.com/articles/" + meta.slug }

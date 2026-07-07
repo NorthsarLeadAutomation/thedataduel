@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Kit vs. GetResponse: Which Is Better in 2026?
 
 Two strong platforms. One decision. Let's make it easy.

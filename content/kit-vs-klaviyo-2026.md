@@ -1,3 +1,6 @@
+---
+date: 2026-07-07
+---
 # Kit vs Klaviyo (2026): Which Email Tool Actually Fits Your Business?
 
 > **Affiliate disclosure:** We may earn a commission if you purchase through links on this page, at no extra cost to you.

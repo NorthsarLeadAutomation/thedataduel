@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Best Email Marketing for Small Businesses in 2026: What Actually Works
 
 > *Northstar may earn a commission if you purchase through affiliate links in this content, at no extra cost to you.*

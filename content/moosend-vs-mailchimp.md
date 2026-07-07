@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Moosend vs. Mailchimp 2026 — Head-to-Head Comparison
 
 *Last updated: June 2026 | Northstar Lead Automation*

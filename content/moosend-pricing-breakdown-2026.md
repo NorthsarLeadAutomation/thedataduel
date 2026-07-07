@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Moosend Pricing 2026: Full Breakdown — Every Tier, Every Feature, Every Dollar
 
 > *Northstar may earn a commission if you purchase through affiliate links in this content, at no extra cost to you.*

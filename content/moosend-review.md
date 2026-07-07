@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Moosend Review 2026 — Honest Verdict for Budget-Conscious Businesses
 
 *Last updated: June 2026 | Northstar Lead Automation*

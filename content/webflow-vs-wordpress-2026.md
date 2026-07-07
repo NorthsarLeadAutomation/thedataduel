@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Webflow vs WordPress: Which Should You Choose in 2026?
 
 You're building a website. You've heard about both Webflow and WordPress. You've probably read enough conflicting takes to feel more confused than when you started.

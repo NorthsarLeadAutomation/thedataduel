@@ -1,3 +1,6 @@
+---
+date: 2026-07-07
+---
 # Moosend vs Klaviyo (2026): The Budget Pick vs The E-Commerce Giant
 
 > **Affiliate disclosure:** We may earn a commission if you purchase through links on this page, at no extra cost to you.

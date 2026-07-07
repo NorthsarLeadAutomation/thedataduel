@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Top 3 GetResponse Alternatives for Creators
 
 GetResponse is a powerful platform — but it wasn't built with creators as the primary audience. If you're a blogger, course creator, newsletter writer, or content entrepreneur, you may find that GetResponse feels a bit too much like business software for what you actually need.

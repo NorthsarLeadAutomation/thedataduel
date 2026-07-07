@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Mailchimp vs Moosend Email Deliverability 2026: Which Actually Reaches the Inbox?
 
 > *Northstar may earn a commission if you purchase through affiliate links in this content, at no extra cost to you.*

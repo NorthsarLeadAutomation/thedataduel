@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Kit (ConvertKit) Review 2026 — Honest Verdict for Creators
 
 *Last updated: June 2026 | Northstar Lead Automation*

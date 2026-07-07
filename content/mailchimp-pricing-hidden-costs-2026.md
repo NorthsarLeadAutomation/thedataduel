@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Mailchimp Pricing 2026: The Hidden Costs They Don't Advertise
 
 > *Northstar may earn a commission if you purchase through affiliate links in this content, at no extra cost to you.*

@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Best Kit (ConvertKit) Alternatives for 2026
 
 Kit (formerly ConvertKit) is excellent for creators — but it's not for everyone. Maybe the pricing doesn't fit your budget. Maybe you need features Kit doesn't have. Maybe you've outgrown it.

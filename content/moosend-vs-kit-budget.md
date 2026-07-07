@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # Moosend vs. Kit: The Best Budget Email Tool?
 
 You've got a growing list, a tight budget, and two solid options in front of you: Moosend and Kit. Both promise to help you build and monetize your audience. But which one actually delivers more value for the money?

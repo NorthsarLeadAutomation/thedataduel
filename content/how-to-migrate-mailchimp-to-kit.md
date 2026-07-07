@@ -1,3 +1,6 @@
+---
+date: 2026-06-01
+---
 # How to Migrate from Mailchimp to Kit in 2026 (Without Losing Your List)
 
 > *Northstar may earn a commission if you purchase through affiliate links in this content, at no extra cost to you.*
