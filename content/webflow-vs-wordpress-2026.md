@@ -1,5 +1,5 @@
 ---
-date: 2026-06-01
+date: 2026-07-07
 ---
 # Webflow vs WordPress: Which Should You Choose in 2026?
 

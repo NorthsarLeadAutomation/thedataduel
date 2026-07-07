@@ -1,5 +1,5 @@
 ---
-date: 2026-06-01
+date: 2026-07-07
 ---
 # Moosend vs. Kit: The Best Budget Email Tool?
 

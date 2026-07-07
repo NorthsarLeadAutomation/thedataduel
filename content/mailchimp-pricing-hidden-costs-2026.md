@@ -1,5 +1,5 @@
 ---
-date: 2026-06-01
+date: 2026-07-07
 ---
 # Mailchimp Pricing 2026: The Hidden Costs They Don't Advertise
 

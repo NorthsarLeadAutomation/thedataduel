@@ -1,5 +1,5 @@
 ---
-date: 2026-06-01
+date: 2026-07-07
 ---
 # Kit vs. GetResponse: Which Is Better in 2026?
 

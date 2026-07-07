@@ -1,5 +1,5 @@
 ---
-date: 2026-06-01
+date: 2026-07-07
 ---
 # Best Kit (ConvertKit) Alternatives for 2026
 

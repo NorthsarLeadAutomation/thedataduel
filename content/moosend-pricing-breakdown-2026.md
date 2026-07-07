@@ -1,5 +1,5 @@
 ---
-date: 2026-06-01
+date: 2026-07-07
 ---
 # Moosend Pricing 2026: Full Breakdown — Every Tier, Every Feature, Every Dollar
 

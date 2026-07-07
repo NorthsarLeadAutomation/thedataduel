@@ -1,5 +1,5 @@
 ---
-date: 2026-06-01
+date: 2026-07-07
 ---
 # How to Migrate from Mailchimp to Kit in 2026 (Without Losing Your List)
 

@@ -1,5 +1,5 @@
 ---
-date: 2026-06-01
+date: 2026-07-07
 ---
 # Moosend Review 2026 — Honest Verdict for Budget-Conscious Businesses
 
